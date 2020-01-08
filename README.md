@@ -14,7 +14,7 @@ Write-ChurchPersons | Out-File "$HOME\Desktop\ward-person-data.json"
 
 ## Other less useful scripts
 ```
-Write-ChurchMinistering | Out-File "$HOME\Desktop\ward-ministering-data.json" # only good way was to loop through everyone (takes awhile)
+Write-ChurchMinistering | Out-File "$HOME\Desktop\ward-ministering-data.json" # takes awhile to run
 Write-ChurchHouseholds | Out-File "$HOME\Desktop\ward-household-data.json"
 ```
 
