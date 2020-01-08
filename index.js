@@ -21,8 +21,8 @@ const dependencies = () => {
   })
 }
 
-const publish = () => {
-  ps.addCommand("./scripts/church-posh.publish.ps1")
+const deploy = () => {
+  ps.addCommand("./scripts/church-posh.deploy.ps1")
     .then(() => {
       ps.addParameters([{ name: "apiKey", value: process.env.KEY }])
     })
@@ -40,4 +40,4 @@ const publish = () => {
 }
 
 exports.dependencies = dependencies
-exports.publish = publish
+exports.deploy = deploy

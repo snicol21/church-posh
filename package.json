@@ -4,7 +4,7 @@
   "description": "PowerShell module that uses Selenium to securely login to churchofjesuschrist.org and pull useful Ward Exec. Secretary information",
   "scripts": {
     "dependencies": "node -e require('./index').dependencies()",
-    "publish": "npm install && npm run dependencies && node -e require('./index').publish()"
+    "deploy": "npm install && npm run dependencies && node -e require('./index').deploy()"
   },
   "repository": {
     "type": "git",
