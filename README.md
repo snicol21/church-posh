@@ -10,7 +10,11 @@ Install-Module church-posh
 ## Run
 ```
 Write-ChurchPersons | Out-File "$HOME\Desktop\ward-person-data.json"
-Write-ChurchMinistering | Out-File "$HOME\Desktop\ward-ministering-data.json"
+```
+
+## Other less useful scripts
+```
+Write-ChurchMinistering | Out-File "$HOME\Desktop\ward-ministering-data.json" # only good way was to loop through everyone (takes awhile)
 Write-ChurchHouseholds | Out-File "$HOME\Desktop\ward-household-data.json"
 ```
 
