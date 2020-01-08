@@ -24,7 +24,7 @@ const dependencies = () => {
 const publish = () => {
   ps.addCommand("./scripts/church-posh.publish.ps1")
     .then(() => {
-      ps.addParameters([{ name: "apiKey", value: process.env.SNICOL_KEY }])
+      ps.addParameters([{ name: "apiKey", value: process.env.KEY }])
     })
     .then(() => {
       ps.invoke()
