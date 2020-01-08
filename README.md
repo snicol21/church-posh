@@ -4,7 +4,7 @@ PowerShell module that uses Selenium to securely login to churchofjesuschrist.or
 ## Install
 I've published this module to PowerShellGallery, so you just need to run this script in an Admin window of PS
 ```
-Install-Module church-posh
+Install-Module church-posh -Scope CurrentUser
 ```
 
 ## Run
