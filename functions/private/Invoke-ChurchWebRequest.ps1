@@ -8,6 +8,7 @@ function Invoke-ChurchWebRequest {
         [string] $ContentType
     )
     try {
+        Write-Host "[INF] Invoking WebRequest...$Uri"
         $params = @{
             Uri             = $Uri
             WebSession      = $WebSession

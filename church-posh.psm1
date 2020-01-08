@@ -7,10 +7,11 @@
 #>
 
 #Get public and private function definition files.
-$public = @( Get-ChildItem -Path $PSScriptRoot\functions\*.ps1 -ErrorAction SilentlyContinue )
+$public = @( Get-ChildItem -Path $PSScriptRoot\functions\public\*.ps1 -ErrorAction SilentlyContinue )
+$private = @( Get-ChildItem -Path $PSScriptRoot\functions\private\*.ps1 -ErrorAction SilentlyContinue )
 
 #Dot source the files
-Foreach ($import in @($public)) {
+Foreach ($import in @($public + $private)) {
     Try {
         . $import.fullname
     }

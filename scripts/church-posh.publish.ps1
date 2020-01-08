@@ -4,5 +4,7 @@ param (
 )
 
 Set-PSRepository -Name 'PSGallery' -InstallationPolicy Trusted
+# Get-Module church-posh
+# Get-Module -ListAvailable
 # Publish-Module -Name 'church-posh' -NuGetApiKey $apiKey
 

@@ -21,7 +21,7 @@
     # Copyright         = ''
     
     # Description of the functionality provided by this module
-    Description = 'PowerShell module that uses Selenium to securely login to churchofjesuschrist.org and pull useful Ward Exec. Secretary information'
+    Description       = 'PowerShell module that uses Selenium to securely login to churchofjesuschrist.org and pull useful Ward Exec. Secretary information'
     
     # Minimum version of the Windows PowerShell engine required by this module
     # PowerShellVersion = ''
@@ -42,7 +42,7 @@
     # ProcessorArchitecture = ''
     
     # Modules that must be imported into the global environment prior to importing this module
-    RequiredModules   = @(@{ModuleName='Selenium'; RequiredVersion='2.3.1'; GUID='a3bdb8c3-c150-48a8-b56d-cd4d43f46a26'})
+    RequiredModules   = @(@{ModuleName = 'Selenium'; RequiredVersion = '2.3.1'; GUID = 'a3bdb8c3-c150-48a8-b56d-cd4d43f46a26' })
     
     # Assemblies that must be loaded prior to importing this module
     # RequiredAssemblies = @()
@@ -60,7 +60,7 @@
     # NestedModules = @()
     
     # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-    FunctionsToExport = '*'
+    FunctionsToExport = @("Write-ChurchHouseholds", "Write-ChurchMinistering", "Write-ChurchPersons")
     
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
     CmdletsToExport   = '*'

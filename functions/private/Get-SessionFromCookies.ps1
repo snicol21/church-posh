@@ -1,8 +1,9 @@
 function Get-SessionFromCookies {
     param (
-        [Parameter(Position=0, Mandatory = $true)]
+        [Parameter(Position = 0, Mandatory = $true)]
         [psobject[]] $Cookies
     )
+    Write-Host "[INF] Creating session from cookies..."
     $session = New-Object Microsoft.PowerShell.Commands.WebRequestSession
     foreach ($cookie in $Cookies) {
         $newCookie = New-Object System.Net.Cookie 

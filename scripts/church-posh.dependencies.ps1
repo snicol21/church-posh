@@ -3,5 +3,5 @@ $modules = @(
 )
 
 foreach ($module in $modules) {
-    Install-Module $module -Force
+    Install-Module -Name $module.ModuleName -RequiredVersion $module.RequiredVersion -Force
 }
