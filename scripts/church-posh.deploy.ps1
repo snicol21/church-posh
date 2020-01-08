@@ -1,7 +1,7 @@
-# param (
-#     [Parameter(Mandatory = $true)]
-#     [string]$apiKey
-# )
+param (
+    [Parameter(Mandatory = $true)]
+    [string]$apiKey
+)
 $Root = $(Get-Item $PSScriptRoot).Parent.FullName;
 $ModulePath = "$Root\church-posh";
 $ManifestPath = "$ModulePath\church-posh.psd1"
