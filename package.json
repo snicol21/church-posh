@@ -1,0 +1,24 @@
+{
+  "name": "church-posh",
+  "version": "1.0.0",
+  "description": "PowerShell module that uses Selenium to securely login to churchofjesuschrist.org and pull useful Ward Exec. Secretary information",
+  "scripts": {
+    "dependencies": "node -e require('./index').dependencies()",
+    "build": "npm install && npm run dependencies",
+    "publish": "npm run dependencies && node -e require('./index').publish()"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snicol21/church-posh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snicol21/church-posh/issues"
+  },
+  "homepage": "https://github.com/snicol21/church-posh#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-powershell": "^4.0.0"
+  }
+}
