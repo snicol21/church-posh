@@ -9,13 +9,17 @@ Install-Module church-posh
 
 ## Run
 ```
-Write-ChurchPersons | Out-File "$HOME\Desktop\ward-person-data.json"
+Write-ChurchPersons -UserName <UserName> -Password <Password> -UnitNumber <UnitNumber> |
+  Out-File "$HOME\Desktop\ward-person-data.json"
 ```
 
 ## Other less useful scripts
 ```
-Write-ChurchMinistering | Out-File "$HOME\Desktop\ward-ministering-data.json" # takes awhile to run
-Write-ChurchHouseholds | Out-File "$HOME\Desktop\ward-household-data.json"
+Write-ChurchMinistering -UserName <UserName> -Password <Password> -UnitNumber <UnitNumber> |
+  Out-File "$HOME\Desktop\ward-ministering-data.json" # takes awhile to run
+
+Write-ChurchHouseholds -UserName <UserName> -Password <Password> -UnitNumber <UnitNumber> |
+  Out-File "$HOME\Desktop\ward-household-data.json"
 ```
 
 Each of these will, of course, prompt for your credentials and unit number.
