@@ -21,20 +21,6 @@ const dependencies = () => {
   })
 }
 
-const build = () => {
-  ps.addCommand("./scripts/church-posh.build.ps1").then(() => {
-    ps.invoke()
-      .then(output => {
-        console.log(output)
-      })
-      .catch(err => {
-        console.log(err)
-        ps.dispose()
-      })
-      .finally(() => ps.dispose())
-  })
-}
-
 const publish = () => {
   ps.addCommand("./scripts/church-posh.publish.ps1")
     .then(() => {
@@ -54,5 +40,4 @@ const publish = () => {
 }
 
 exports.dependencies = dependencies
-exports.build = build
 exports.publish = publish
