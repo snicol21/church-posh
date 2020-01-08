@@ -18,6 +18,6 @@ Write-ChurchMinistering | Out-File "$HOME\Desktop\ward-ministering-data.json" # 
 Write-ChurchHouseholds | Out-File "$HOME\Desktop\ward-household-data.json"
 ```
 
-Each of these will of course prompt you for your credentials and unit number
+Each of these will, of course, prompt for your credentials and unit number.
 
 Good luck!
