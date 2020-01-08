@@ -7,7 +7,7 @@ function New-ChurchSession {
     )
     Write-Host "[INF] [Selenium] Starting up Selenium using Chrome driver..."
     $uri = Get-ChurchConfig -Action "Login"
-    $driver = Start-SeChrome
+    $driver = Start-SeChrome -Headless
 
     Write-Host "[INF] [Selenium] Navigate to $uri..."
     Enter-SeUrl -Url $uri -Driver $driver
