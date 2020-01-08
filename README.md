@@ -2,7 +2,7 @@
 PowerShell module that uses Selenium to securely login to churchofjesuschrist.org and pull useful Ward Exec. Secretary information
 
 ## Install
-I've published this module to PowerShell Gallery, so you just need to run this script in an Admin window of PS
+I've published this module to PowerShellGallery, so you just need to run this script in an Admin window of PS
 ```
 Install-Module church-posh
 ```
