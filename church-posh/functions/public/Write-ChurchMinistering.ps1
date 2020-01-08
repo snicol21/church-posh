@@ -27,7 +27,6 @@ function Write-ChurchMinistering {
         $session = New-ChurchSession -UserName $UserName -Password $Password;
 
         $memberListJSON = Get-ChurchMemberList -Session $session -UnitNumber $UnitNumber;
-        # $memberListJSON = (Get-Content C:\Users\spencer.nicol\Desktop\church\test\membersList.json | Out-String)
         $memberList = $memberListJSON | ConvertFrom-Json
 
         $output = @{
