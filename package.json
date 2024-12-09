@@ -18,7 +18,7 @@
   "homepage": "https://github.com/snicol21/church-posh#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "node-powershell": "^4.0.0"
+    "node-powershell": "^5.0.1"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
